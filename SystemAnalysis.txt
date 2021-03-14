@@ -1,0 +1,496 @@
+3. SYSTEM ANALYSIS:
+
+3.11 FR ON T EN D ( JA VA )
+
+Overview of Java:
+
+Java is a powerful but lean object oriented programming language. It has generated a lot of excitement because it makes it possible to program for Internet by creating applets, programs that can be embedded in wed page. The context of an applet is limited only by ones imagination. Applets can be just little decorations to liven up web page, or they can be serious applications like word processors or spreadsheet.
+But Java is more than programming language for writing applets. It is becoming so popular that many people believe it will become standard language for both general purposes and Internet programming.
+
+Java f rom C ++:
+
+
+Java builds on the strength of C++. It has taken the best features of C++ and discarded the more problematic and error prone parts. To this, it has added garbage collection (automatic memory management), multi threading (the capacity for one program to do more than one thing at a time) and security capabilities. The result is that Java is simple, elegant, powerful and easy to use.
+Java is actually a platform consisting of three components:
+Java Programming Language.
+Java library of classes and interfaces.
+Java virtual Machine.
+But Java is more than programming language for writing applets. It is becoming so popular that many people believe it will become standard language for both general purpose and Internet programming.
+
+C om pon en t s of Java:
+
+
+Java is actually a platform consisting of three components:
+Java Programming Language.
+Java Library of classes and interfaces.
+Java Virtual Machine.
+
+
+Java i s Ob j ect Orien t ed :
+
+
+The Java programming language is object oriented, which makes program design focus on what you are dealing with rather than on how you are going to do something. This makes it more useful for programming in sophisticated projects because one can break the things down into understandable components. Reusability of these components is another big benefit.
+Object oriented languages use the paradigm of classes. In simple terms, a class includes both the data and the functions to operate on that data. Object is an instance of the class forms the actual run time entity of the class. Encapsulation of code and date makes it possible it make the changes in code without breaking other programs that use that code.
+Java includes inheritance, or the ability to derive new classes form existing class referred to as the parent class. A subclass can add new data members to those inherited form the parent class. As far as methods are concerned, the subclass can reuse the inherited methods as it is, change them, and its own new methods.
+
+Java’ s excitin g f eatu res are:
+
+
+Ease in code correction.
+Garbage collection.
+Absence of pointers.
+Java is extensible.
+
+Java is secure.
+Java is robust.
+Java is multithreading.
+Simplicity.
+
+
+Lib rary C l ass es :
+
+
+The Java platform includes an extensive class library so that programmers can use already existing classes, as it is, create subclasses to modify existing classes or implement interfaces and augment the capabilities of classes.
+Classes contain data members i.e. fields and functions i.e. methods. In classes fields may be either variable or constant, and methods are fully implemented.
+
+I n t erf aces :
+
+
+Interfaces is also merely like class. Interfaces also contain data members and functions. But the main difference is that in an interface, fields must be constants, and methods are just prototypes with no implementations. The prototype give the method signature (the return type, the function name and the number of parameters with the type for each parameter), but the programmer must supply implementation. To use an interface, a programmer defines a class, declares that implements the interfaces, and then implements all the methods in that interface as the class.
+The methods are implemented in a way that is appropriate for the class in which the methods are being used. Interface let one add functionality to a class and give a great deal of flexibility in doing it. In other words interfaces provide most of the advantages of multiple inheritances without its disadvantages.
+
+Pack ages :
+
+
+A package is a collection of related java classes and interfaces. The following list, gives examples of some java packages and what they cover.
+
+JAVA.IO- Classes those manage reading data from input streams and writing data to the output streams.
+JAVA.AWT- Classes that manage user interface components such as windows, dialog boxes, buttons, check boxes, lists, menus, scrollbars, and text fields; the ‘AWT’ stands Abstract Window Toolkit.
+JAVA.APPLET- The applet class, which provides the ability to write applets, this package also includes several interfaces that connect an applet to its document and to resources for playing audio.
+JAVA.AWT.EVENT- GUIs are event driven; it means they generate events when the user of the program interacts with the GUI.
+JAVAX.SWING- This package enables the user to create interfaces which performs the GUI operations.
+JAVA.SQL- The JDBC API, classes and interfaces that access database and send SQL. In Java, packages serve as basis for building other package.
+
+Th e Java Platf orm Bu i ld s in S ecu r i ty in Fou r Way s :
+
+
+The way memory is allocated and laid out: In java an objects location in memory is not determined until the runtime, as opposed to C and C++, where the compiler makes memory layout decisions. As the result, a programmer cannot look at a class definition and figures out how it might be laid laid out in memory. Also since, java has no pointers, a programmer cannot forge pointer to memory.
+The way incoming code is checked. The java virtual machine doesn’t trust any incoming code and subjects it to what is called Byte Code verification. The byte code verifier, part of the virtual machine, checks that
+The format of incoming code is correct
+Incoming code doesn’t forge pointers
+It doesn’t violate access restrictions
+It access objects as what they are
+
+
+The way classes are loaded. The java byte code loader, another Part of the virtual
+
+machine, checks whether classes loaded during program execution are local or from across a network. Imported classes cannot be substituted for built in classes cannot accidentally reference classes brought in over a network.
+The way access is restricted for entrusted code. The java security manager allows user to restrict entrusted java applets so that they cannot access the local network, local files and other resources.
+
+Wh at i s  JD BC ?
+
+
+JDBC is a java TM API for executing SQL statements.
+It consists of a set of classes and interfaces written in the java programming language that makes it easy to send SQL statements to virtually any relational databases.
+JDBC (Java Database Connectivity) is a front end tool for connecting server to ODBC in that respect.
+JDBC is essentially a low-level application programming interface. It is called as low-level API since any data manipulation, storage and retrieval has to be done by the program itself. Some tools which provide a higher-level abstraction of, expected shortly.
+The combination of java and JDBC lets a programmer write it once and run it anywhere.
+
+
+R eq u i rem en t s to u s e JD BC :
+
+
+To use JDBC we need a basic knowledge of database and SQL.
+We need the jdk1.1 (Java Development Kit 1.1 available Java Soft’s website) or a version of java since jdk1.1 and above come bundled with JDBC software.
+A back-end database engine for which a JDBC driver is available. When JDBC drivers area not available JDBC-ODBC bridge drivers are used to access the database through ODBC.
+Back-end is not needed when JDBC driver is capable of storing and retrieving the
+
+data itself, or if JDBC-ODBC bridge and the ODBC driver can be used to store and retrieve the information.
+
+
+Wh at d oes JD BC d o?
+
+
+JDBC makes it possible to do three things.
+Establishes the connection to database
+Send SQL statements
+Process the results.
+
+
+JDBC is a low-level API and a base for Higher-level API. JDBC is a low-level interface, which means that it is used to invoke SQL commands directly. It works very well in this capacity and is easier to use than other to build higher-level interfaces and tools. A higher level interface such as JDBC. There are two kinds of higher-level APIs.
+An embedded SQL for java and
+A direct mapping of relational database tables to java classes.
+
+
+Java’ s Magig: Th e By t e Cod e
+
+
+The key that allows java to solve both the security and the portability problems just described is that the output of a java compiler is not executable code. Rather, it is Byte code. Byte code is highly optimized set of instructions designed to be executed by the java run-time system, which is called the Java Virtual Machine (JVM). That is, in its standard form, the JVM is an interpreter for Byte code. This may come as a bit of a surprise.
+Translating a java program into Byte code helps makes easier to run a program in a wide variety of environments. The reason is straight forward; only the JVM needs to be implemented for each platform. Once the run-time package exists for a given system, any java program can run on it. Remember, although the details of the JVM will differ from
+
+platform to platform, all interrupt the same Java Byte Code.
+
+
+
+JD BC D r i vers :
+
+
+The JDBC API founds in java.sql package, consists only a few concrete classes. Much of the API is distributed as database-neutral interface classes that specify behavior without providing any implementation. The actual implementations are provided by third-party vendors.
+An individual database system is accessed via a specific JDBC driver that implements the java.sql.Driver interface. Drivers exist for nearly all popular RDBMS systems, though few are available for free. Sun bundles a free JDBC-ODBC bridge driver with the JDK to allow access to standard ODBC data sources, such as a Microsoft Access Database.
+However, Sun advises against using the bridge driver for anything other than development and very limited deployment. Servlet developers in particular should need this warning because any problem in the JDBC-ODBC bridge driver’s native code section can crash the entire server, not just your servlets.
+JDBC drivers are available for most database platforms, from a number of vendors and in a number of different flavors. There are four driver categories:
+
+Typ e 1 - JD BC - OD BC Brid ge D r i ver
+
+
+Type1 drivers use a bridge technology to connect a java client to an ODBC database service. Sun’s JDBC-ODBC bridge is the most common Type1 driver. These drivers are implemented using native code.
+
+Typ e 2 - N ative- A PI Partly - Java D r i ver
+
+
+Type2 drivers wrap this layer of java around database-specific native code libraries. For Oracle databases, the native libraries might be based on OCI (Oracle Call
+
+Interface) libraries, which were originally designed for C/C++ programmers. Because Type2 drivers are implementing using native code, in some cases they have better performance than their all-Java counterparts. They add an element of risk; however, because a defect in a driver’s native code section can crash the entire server.
+
+Typ e 3 - N e t - Protocol A l l - Java D r i ver
+
+
+Type3 drivers communicate via a generic network protocol to a piece of custom middleware. The middleware components might use any type of driver to provide the actual database access. WebLogic’s Tengah product line is an example. These drivers are all java, which makes them useful for applet deployment and safe for servlet deployment.
+
+Typ e 4 - N ative- Protocol A l l - Java D r i ver
+
+
+Type4 divers are the most direct of the lot. Written entirely in java, Type4 drivers understand database-specific networking protocols and can access the database directly without any additional software.
+
+A list of currently available JDBC drivers can be found at
+
+
+Gettin g a C on n ection
+
+
+The first step in using a JDBC driver to get a database connection involves loading the specific driver class into the application’s JVM. This makes the driver available later, when we need is for opening the connection. An easy way to load the driver class is to use the Class.forName () method:
+
+C l as s . f or N am e  (“ s u n . jdb c . od b c_ Jd b c Od b c D r i ver”):
+
+
+When the driver is loaded to memory, it registers itself with the java.sql.DriverManager class to open a connection to a given database, where the
+
+database is specified by a specially formatted URL. The method used to open the connection is DriverManager.GetConnection (). It returns a class that implements the java.sql.Connection interface:
+A JDBC URL identifies an individual database in a driver-specific manner. Different drivers may need different information in the URL to specify the host database. JDBC URLs usually begin with jdbc:sub protocol:subname during the call to get Connection(), the Driver Manager object asks each registered driver if it recognizes the URL. If a driver says yes, the driver manager uses that driver to create the connection object. Here is a snippet of code a servlet might use to load its database driver with the JDBC-ODBC Bridge and create an initial connection:
+
+SERVLETS:
+
+
+Wh at are Java s ervlets ?
+
+
+Servlets are Java technology’s answer to CGI programming. They are programs that run on a Web server and build Web pages. Building Web pages on the fly is useful (and commonly done) for a number of reasons:
+
+Th e Web p age i s b as ed on d ata s ub m i t t ed by th e u s er.
+
+
+For example the results pages from search engines are generated this way, and programs that process orders for
+E-comsitedo this as well.
+
+
+Th e d ata ch an ges f req u en t ly .
+
+
+For example, a weather-report or news headlines page might build the page dynamically, perhaps returning a previously built page if it is still up to date.
+
+Th e Web p ages us es in form ation f rom corp orate d atab as es
+
+or oth er su ch s ou rces .
+
+
+For example, you would use this for making a web page at On-line stores that lists current prices and number of items in stock.
+
+Wh at are th e A d van tages of S ervlets Over “ Trad i t i on a l ” C GI ?
+
+
+Java servlets are more efficient, easier to use, more powerful, more portable, and cheaper than traditional CGI and than many alternative CGI-like technologies.
+
+Eff i c i en t :
+
+
+With traditional CGI, a new process is started for each HTTP request. If the CGI process does a relatively fast operation, the overhead of starting the process can dominate the execution time.
+With servlets, the Java Virtual Machine stays up, and each request is handled by a lightweight Java Thread, not a heavyweight operating system process. Similarly, in traditional CGI, if there are N simultaneous request to the same CGI program, then the code for the CGI program is loaded into memory n times. With servlets, however, there are N threads but only a single copy of the servlet class. Servlets also have more alternatives than do regular CGI programs for optimizations such as caching previous computations, keeping database connections open, and the like.
+
+C on ven i en t :
+
+
+Hey, you are already known Java. Why learn Perl too? Besides the convenience of being able to use a familiar language, servlets have an extension infrastructure for automatically parsing and decoding HTML form data, reading and setting HTTP headers, handling cookies, tracking sessions, and many other such utilities.
+
+Pow erf u l :
+
+
+Java servlets let you easily do several things that are difficult or impossible with regular CGI. For one thing, servlets can talk directly to the Web server (regular CGI programs can’t). This simplifies operations that need to look up images and other data stored in standard places. Servlets can also share data among each other, making useful thing like database connection pools easy to implement. They can also maintain information from request to request, simplifying things like session tracking and caching of previous computations.
+
+Portab l e :
+
+
+Servlets are written in java and follows a well-standardized API. Consequently, servlets return for, I-Planet Enterprise Server can run virtually unchanged on Apache, Microsoft IIS, or Web Star. Servlets are supported directly or via plug-in on almost every major Web Server.
+
+I n exp en s i ve:
+
+
+There are a number of free or very inexpensive Web servers available that are good for “personal” use or low-level Web sites. However, with the major exception of Apache, which is free, most commercial-quality Web servers are relatively expensive. Nevertheless, once you have a Web server, no matter the cost server, adding servlet support to it (if it doesn’t come preconfigured to support servlets) is generally free or cheap.
+
+Wh at i s JS P?
+
+
+Java Serve Pages (JSP) is a technology that lets you mix regular, static HTML with dynamically-generated HTML. Many Web pages that are built by CGI programs are mostly static, with the dynamic part limited to a few small locations. But most CGI variations, including servlets, make you generate the entire page via your program, even
+
+though most of it is always the same. JSP lets you create the two parts separately. Here’s an example:
+
+Wh at are th e A d van tages of JS P?
+
+
+Vs . A c t i ve S erver Pages ( A S P):
+
+
+ASP is a similar technology from Microsoft. The advantages of JSP are twofold. First, the dynamic part is written in Java not in Visual Basic or other MS-specific language. So it is more powerful and easier to use. Second, it portable to other operating systems and non-Microsoft web servers.
+
+Vs . Pu re S ervlets :
+
+
+JSP doesn’t give you anything that you couldn’t in principle do with a servlet. But it is more convenient to write (and to modify!) regular HTML than to have a zillion println statements that generate the HTML. Plus, by separating the look from the content you can put different people on different tasks: your Web page design experts can build the HTML, leaving places for your servlet programmers to insert the dynamic content.
+
+Vs . S erver- S id e I n c lu d es ( SS I ) :
+
+
+SSI is a widely-supported technology for including externally-defined pieces into a static Web page. JSP is better because it lets you use servlets instead of a separate program to generate that dynamic part. Besides, SSI is really only intended for simple inclusions, not for “real” programs that use form data, make database connections, and the like.
+
+Vs . Java S crip t :
+
+
+JavaScript can generate HTML dynamically on the client. This is a useful
+
+capability, but only handles situations where the dynamic information is based on the client’s environment. With the exception of cookies, HTTP and form submission data is not available to JavaScript. And, since it runs on the client, JavaScript can’t access server-side resources like databases, catalogs, pricing information, and the like.
+
+Vs . Static HTML:
+
+
+Regular, HTML, of course, cannot contain dynamic information. JSP is so easy and convenient that it is quite feasible to argument HTML pages that only benefit marginally by the insertion of small amounts of dynamic data. Previously, the cost of using dynamic data would preclude its use in all but the most valuable instances.
+
+Bas i c S ervlet S t ru c tu re:
+
+
+Here’s the outline of a basic servlet that handles GET requests. GET requests, for those unfamiliar with HTTP, are requests made by browsers when the types in a URL on the address line, follows a link from a web page, or makes an HTML form that does not specify a METHOD. Servlets can also very easily handle POST requests, which are generated when someone creates an HTML form that specifies METHOD=”POST”.
+
+Import java.io.*;
+Import javax.servlet.*;
+Import javax.servlet.http.*;
+
+
+Public class SomeServlets extends HttpServlet {
+Public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException.IOException {
+
+//Use “request” to read incoming HTTP headers (e.g. cookies)
+//and HTML form data (e.g. data the user entered and submitted)
+
+//Use “response” to specify the HTTP response line and headers
+// (e.g. specifying the content type, setting cookies).
+
+
+printWriter out=response.getWriter ();
+//Use “out” to send content to browser
+}
+
+
+To be a servlet, a class should extend HttpServlet and override doGet or doPost (or both), depending on whether the data is being sent by GET or by POST. These methods take two arguments: an httpServletRequest and an HttpServletResponse. The HttpServletRequest has methods that let you find out about incoming information such as FORM data, HTTP request headers, and the like. The HttpServletResponse has methods that lets you specify the HTTP response line (200,404, etc.), response headers (Content- Type, Set-Cookies, etc.), and, most importantly, lets you obtain a PrintWriter used to send output back to the client.
+For simple servlets, most of the effort is println statements that generate the desired page. Note that doGet and doPost throw two exceptions, so you are required to include them in the declaration. Also note that you have to import classes in java.io (for printWriter, etc.), javax.servlet (for HttpServlet, etc.), and javax.servlet.http (for HttpServletRequest and HttpServletResponse). Finally, note that doGet and doPost are called by the service method, and sometimes you may want to override service directly,
+e.g. for a servlet that handles both GET and POST request.
+
+
+C om pilin g an d In s tallin g th e S ervlet:
+
+
+Note that the specific details for installing servlets vary from web server to web server. Please refer to your web server documentation for definitive directions. The on- line examples are running on Java Web Server (JWS) 2.0, where servlets are expected to be in a directory called Servlets in the JWS installation hierarchy. However, I placed this servlet in a separate package (hall) to avoid conflicts with other servlets on this server. You will want to be the same if you are using a web server that is used by other people
+
+and doesn’t have a good infrastructure for “virtual servers” to prevent these conflicts automatically.
+If you’ve never used packages before, there are two ways to compile classes that are in packages.
+One way is to set your CLASSPATH to point to the directory above the actually containing your servlets. You can them compile normally from within the directory. For example, if your base directory is C:\JavaWebServer\servlets and your package name (and thus subdirectory name) is hall, and were on windows, you’d do:
+
+DOS> set CLASSPATH=C: \JavaWebServlets; %CLASSPATH% DOS> cd C:\JavaWebServer\servlets\hall
+DOS> javac yourServlet.java
+
+
+The first path, setting the CLASSPATH, you probably want to do permanently, rather than each time you start a new DOS window. On Windows 95/98 you’d typically put the “set CLASSPATH=…….” Statement in your autoexec.bat file somewhere after the line that set the CLASSPATH to point to servlet.har and jsp.jar. On Windows NT, you’d go to the Start menu, select settings, select Control panel, select system, select Environment, then enter the variable and value. Note also that if your package were of the form name1.name2.name3 rather than simply name1 as here, you’d still have the CLASSPATH point to the top level directory of your package hierarchy (the one contain name1).
+A Second way to compile classes that are in packages is to go to the directory above the one containing your servlets, and then do “javac directory\YourServlet.java” (UNIX; note the forward slash). For example, suppose again that your base directory is C:\JavaWebServer\Servlets and your package name (and thus subdirectory name) is hall, and you were on Windows. In that case, you’d do the following:
+
+DOS> cd C:\JavaWeb Server\Servlets DOS> javac hall\Yourservlet.java
+
+Note that, on Windows, most JDK 1.1 versions of javac require a backslash, not a forward slash, after the directory name. This is fixed in JDK 1.1, many servlet authors stick with JDK 1.1.for portability.
+Finally, another advanced option is to keep the source code in a location distinct from the .class files, and use javac’s “-d” option to install them in the location the web server expects.
+
+R un n in g th e S ervlet:
+
+
+With the Java web Sever, servlets are placed in the servlets directory within the main JWS installation directory, and are invoked via http://host/servlet/ServletName. Note that the directory is servlets, plural, while the URL refers to servlet, singular. Since this example was placed in the hall package, it would be invoked via http://host/servlet/hall.Helloworld. Other Web servers may have slightly different conventions on where to install servlets and how to invoke them. Most servers also let you define aliases for servlets. So that a servlet can be invoked via http://host/any- path/any-file.html. The process for doing this is completely server specific: check your server`s documentation for details.
+A Servlet that generates HTML Most servlets generate HTML, not plain text as in the previous example. To do that, you need two additional steps: tell the browser that you are sending back HTML, and modify the println statements to build a legal Web page. The first step is done by setting the Content-Type response header. In general, headers can be set via the setHeader method of HttpServletResponse, but setting the content type is such a common task that there is also a special Setcontenttype method just for this purpose. Note that you need to set response headers before actually returning any of the content via the Printwriter. Here`s an example:
+
+Main t en an ce R e l eas e  of th e  Java S ervlet 2 . 5  S p ecif i cation :
+
+
+Download the maintenance release of the Java Servlet Specification, version 2.5.
+This version of Java Servlet technology.
+
+
+
+
+
+
+I s in c lu d ed in th e  EE 5  p l atf orm : Web Tier to go w i th Java EE 5 :
+
+
+A Look at Resource Injection Read about the support for annotations by Java Web tier technologies and how they can simplify access to resources, environment data, and life-cycle control.
+
+Form Proces s in g  S ervlet:
+
+
+This section shows how to
+Process form data
+Manage persistent data
+Use init parameters
+The next Servlet that we are going to write provides a user interface to a mailing list through HTML forms. A user should be able to enter an email address in a text field and press a button to subscribe to the list or another button to unsubscribe.
+The Servlet consists of two major parts:
+Data management
+Client interaction.
+
+
+D ata m anagem en t :
+
+
+The data management is rather straight-forward for an experienced Java Programmer. We use a java.lang.Vector object which contains the email addresses as Strings. Since a Servlet ca has data which persists between requests we load the address list only once, when the Servlet is initialized, and save it every time it has been changed by a request. An alternative approach would be keeping the list in memory while the Servlet is active and writing it to disk in the destroy method. This would avoid the
+
+overhead of saving the address list after every change but is less fail-safe. If for some reason the address file can`t be written to disk or the server crashes and cannot destroy the Servlet, all changes to the list will be lost even though the users who submitted the requests to change the list received positive responses.
+In init we first call super.init(config) to leave the ServletConfig management to the super class (HttpServlet),then we get the name of the address file from an init parameter(which is set up in the Web Server configuration). If the parameter is not available the Servlet throws a javax.servlet.UnavailableException (a subclass of javax.servletException) which indicates that a Servlet is temporarily (if a duration is specified) or permanently (as in this case) unavailable. Finally, the init method desterilizes the address file or creates an empty Vector if the address file does not exist yet. All exceptions that occur during the reserialization are transformed into Unavailable Exceptions.
+The methods subscribe and unsubscribe are used to (un-)subscribe an address. They save the address list if it was modified by calling save () and return a Boolean success value. Note that these methods are both synchronized (on the Servlet object)to ensure the integrity of the address list, both, in memory and on disk.
+The save method serializes the address list to the address file on disk which can be read again by init when the Servlet is restarted.
+
+C l i en t in t eraction :
+The client interaction is handled by two of the standard HttpServlet methods, doGet and doPost.
+The doGet method replies to GET requests by sending an HTML page which contains the list of the currently subscribe or unsubscribe an address:
+The response content type is again set to text/html and the response is marked as not cacheable to proxy servers and clients (because it is dynamically created) by setting an HTTP header “pragma:no-cache”. The form asks the client to use the POST method for submitting form data.
+Here is a typical output by this method:
+The doPost method receives the submitted form data, updates the address list and
+
+sends back a confirmation page:
+Finally a confirmation page is sent with the usual method. Req.getRequestURI () is used to get the URI of the Servlet for a link back to the main page (which is created by doGet).
+As usual, the Servlet extends javax.http.servlet.HttpServlet and overrides getServletInfo to provide a short notice. At last, here is the full source code of the ListManagerServlet.
+
+3.22 BACK END ( ORACLE)
+
+Execu t in g S QL Qu eries :
+
+
+To really use a database, we need to have some way to execute queries. The simplest way to execute a query is to use the java.sql.Statement class. Statement objects are never instantiated directly; instead, a program calls the createStatement() method of Connection to obtain a new Statement object:
+
+Statement stmt=con.crea:Statement();
+
+
+A query that returns data can be executed using the executeQuery () method of Statement and returns a java.sql.ResultSet that encapsulates the retrieved data:
+
+ResultSet rs-stmt.executeQuery(“SELECT * FROM CUSTOMERS”);
+
+
+You can think of a ResultSet object as a representation of the query result returned one row at a time. You use the next() method of ResultSet to move from row to row. The ResultSet interface also boasts a multitude of methods designed for retrieving data from the current row. The getString () and getObject ()methods are among the most frequently used for retrieving column values:
+
+while(rs.next()) {
+
+String event=rs.getString(“even”);
+Object count=(Integer)rs.getObject(“count”);
+}
+
+
+You should know that the ResultSet is linked to its parent Statement. Therefore, if a Statement is closed or used to execute another query, any related ResultSet objects are closed automatically.
+
+Han d l in g S QL Excep t i on s :
+
+
+DBPhoneLookup encloses most of its code in a try/catch block. This block catches two exceptions: ClassNotFoundException and SQLException. The former is thrown by the Class.forName() method when the JDBC driver class can not be loaded. The latter is thrown by any JDBC method that has a problem. SQLException objects are just like any other exception type, with the additional feature that they can chain. The SQLException class defines an extra method, getNextException(), that allows the exception to encapsulate additional Exception objects. We didn’t bother with this feature in the previous example, but here’s how to use it:
+
+Catch(SQLException e) { out.println(e.getMessage()); while((e=e.getNextException())!=null) { out.println(e.getMessage());
+}
+}
+
+
+This code displays the message from the first exception and then loops through all the remaining exceptions, outputting the error message associated with each one. In practice, the first exception will generally include the most relevant information.
+
+R es u l t s in D e tail:
+
+
+Before we continue, we should take a closer look at the ResultSet interface and related ResultSetMetaData interface. In Example9-1, we knew what our query looked like, and we knew what we expected to get back, so we formatted the output appropriately. But, if we want to display the results of a query in an HTML table, it would nice to have some Java code that builds the table automatically from the ResultSet rather than having to write the same loop-and-display code over and over. As an added bonus, this kind of code makes it possible to change the contents of the table simply by changing the query.
+The ResultSetMetaData interface provides a way for a program to learn about the underlying structure of a query result on the fly. We can use it to build an object that dynamically generates an HTML table from a ResultSet, as shown in Example9-2. Many Java HTML generation tools have a similar capability.
+
+Han d l in g Nu l l Field s :
+
+
+Handling null database values with JDBC can be a little tricky( A database field can be set to null to indicate that no value is present, in much the same way that a Java object can be set to null). A method that does not return an object, like getInt(),has no way of indicating whether a column is null or whether it contains actual information. (Some drivers return a string that contains the text “null” when getString() is called on a null column!) any special value like -1, might be a legitimate value. Therefore, JDBC includes the wasNull() method in ResultSet, which returns true or false depending on whether the last column read was a true database null. This means that you must read data from the ResultSet into a variable, call was Null (), and proceed accordingly. It’s not pretty, but it works. Here’s an example:
+
+int age=rs.getInt(“age”); if(!rs.wasNull()) out.println(“Age:”+age);
+
+Another way to check for null values is to use the getObject() method. If a column is null, getObject() always returns null. Compare this to the getString() method that has been known, in some implementations, to return the empty string if a column is null. Using getObject() eliminates the need to call wasNull() and leads to simpler code.
+U pd atin g th e Datab as e :
+
+
+Most database-enabled web sites need to do more than just perform dueries. When a client submits an order or provides some kind of information, the data needs to be entered into the database. When you know you’re executing a SQL UPDATE, INSERT, or DELETE statement and you know you don’t except a ResultSet, you can use the executeUpdate() method of statement. It returns a count that indicates the number of rows modified by the statement. It’s used like this:
+
+int count= stmt.executeUpdate(“DELETE FROM CUSTOMERS WHERE CUSTOMER_ID=5”)
+
+If you are executing SQL, that may return either a ResultSet or a count (say, if you’re handling user-submitted SQL or building generic data-handling classes), use the generic execute() method of statement. It returns a Boolean whose value is true if the SQL statement produced one or more ResultSet objects or false if it resulted in an update count:
+
+boolean b=stmt.execute(sql);
+
+
+The getResultSet() and getUpdateCount() method of statement provide access to the results of the execute() method.
+
+U s in g Prep ared Statem ents :
+
+
+A prepared statement object is like a regular statement object, in that it can be used to execute SQL statements. The important difference is that the SQL in a PreparedStatement
+
+is precompiled by the database for faster execution. Once a PreparedStatemant has been compiled, it can still be customized by adjusting predefined parameters. Prepared statements are useful in applications that have to run the same general SQL command over and over.
+Use the preparedStatement (String) method of connection to create preparedStatement objects. Use the? Character as a placeholder for values to be substituted later. For example:
+
+PreparedStatement pstmt = con.preparedStatement
+(“INSERT INTO ORDERS (ORDER_ID, CUSTOMER_ID.TOTAL) VALUES (?,?,?)”); INSERT INTO MUSKETEERS (NAME) VALUES (‘John d’Artangan’)
+As you see, the string terminates twice. One solution is to manually replace the single quote’ with two single quotes”, the Oracle escape sequence for one single quote. This solution, requires you to escape every character that your database treats as special—not an easy task and not consistent with writing platform-independent code. A far better solution is to use a preparedStatement and pass the string using its setString() method, as shown below. The preparedStatement automatically escapes the string as necessary for your database:
+PreparedStatement pstmt = con.preparedStatement (“INSERT INTO MUSKETEERS (NAME) VALUES (?)”) ;
+Pstmt.setString (1,”John d’Artagan”); Pstmt.executeUpdate ();
+
+3.22 MOD U LES :
+
+There are 5 modules in this project.
+Administrator Module.
+Reservation Agent Module.
+Passenger Module.
+Payment.
+Cancellation.
+
+
+MOD U LES EXPLA N A TI ON :
+
+Administrator Module.
+Enables the administrator to perform all administrative functions and manage inventory over LAN or the Internet. The administrator can define or modify routes, fares schedules and assign or deny access for qualified travel agents and other authorized users.
+
+Reservation Agent Module.
+
+
+Allows the airlines reservation agents to make and modify reservation on the LAN or over the internet. The reservation agents could be stationed at any airline office location.
+
+Passenger Module.
+
+
+This module enables online customers to make reservations, views their bookings, make special service requests and define their preferences over the web.
+
+Payment.
+
+
+Provides the airline with the ability to set up various travel agents and give them reservations capabilities over the Internet. The travel agents are able to display and offer discounted fares to passengers.
+
+Cancellation.
+
+
+The system should allow the user to cancel the existing booking. In this cancellation very helpful in all the travelers.
