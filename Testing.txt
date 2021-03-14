@@ -1,0 +1,60 @@
+7. TESTING:
+
+7.1Introduction:
+
+System Development is a process of conceiving the specification specified in the designing stage into source code. Careful study and observation about system designing were made and accordingly the system was coded to convert from designing to source code, where visual Basic as the front end and OracleXE as the backend. The System was developed such that it should be used for the future enhancement.
+All the module of the system is combined and is put to the operational use. This means that the new and old system are run in the parallel for sometimes, errors are identified and the corresponding errors are to be concerned to get the required output.
+The set of working programs and initialized tables are also provided for the easy start of the user, in addition, system documentation is also provided, and all users have been trained to use the system.
+This creates two problems,
+The time lag between the cause and appearance of the problem.
+The effect of system errors on files and records within the system.
+
+
+7.2Types of testing:
+
+
+7.2.1Unit Testing:
+
+Unit test is designed to ensure that the purpose for which it was designed for which it was designed for is fulfilled. Each and every module was tested individually with the test data and error  messages  were  displayed for incorrect and sufficient for entry works. All validation was tested to  correctness. Test data were fed  in  and  results were checked for  the maintenance module, to ensure that all  tables  created  contained  nothing but valid data. Reverential integrity constraints specified as part
+
+of the table definition was also tested.
+
+
+7.2.2Integration Testing:
+
+
+In integration testing a system consisting of different modules  is tested for problems arising from component interaction. Integration testing should be developed from the system specification. Firstly, a minimum configuration must be integrated and tested. In my  project  I  have done integration testing in a bottom up fashion i.e. in  this project I  have started construction and testing with atomic modules. After  unit  testing the modules are integrated one by one and then tested the system for problems arising from component interaction.
+
+
+7.2.3Recovery Testing:
+
+Many computer based systems must recover from faults and resume processing within a pre-specified time. In some cases  a  system  must  be fault tolerant. ie  processing faults must not  cause overall system function to cease. In the casers a system failure must  be  corrected  within  a  specified period of time or severe economic damage will occur.
+
+
+7.2.4Security Testing:
+
+Any computer- based system the manages sensitive information or cause action that can  improperly harm individual is a  tablet for  improper or illegal penetration Security testing attempts to verify that protection mechanism built into a system will, in fact protect it from improper  penetration . During security testing, the tester plays the role of the individual who desire to penetrate the system. The tester may attempt to acquire passwords through external clerical means; may attack the system with custom software designed to break down any defenses that have been constructed; may overwhelm the System.
+
+
+
+7.2.5Performance Testing:
+
+For real time and embedded system, software that provides required functions but not confirm to performance requirements is unacceptable. Performance testing is designed to test the run time performance of software within the context of an integrated system. Performance testing occurs throughout all steps in the testing process. Even at unit level, the performance of an individual module may be accessed as white box test recon ducted. However, it is not until all system elements are fully integrated that true performance of a system can be ascertained.
+Performance Tests are sometimes coupled with stress testing and often required other hardware and software implementation. It is often necessary to measure Resource utilization .By incrementing a system the tester can uncover situations that lead to degradation and possible system failure.
+
+7.2.6White Box Testing:
+
+In white box testing knowing the internal working of the base, test can be conducted to ensure that internal operations are performed according to specification and all internal components have been adequately exercised.  In white box testing logical path through the software are tested by  providing test cases that exercise specific set of conditions  and  loops.  Using white- box testing software developer can derive test case that
+Guarantee that all independent paths within a module have been exercised at least once.
+Exercise all logical decisions on their true and false side.
+Exercise all loops at their boundaries and within  their operational bound.
+Exercise internal data structure to ensure their validity.
+
+
+
+8.CONCLUSION:
+
+
+The entire project has been developed and deployed as per the requirements stated by the user, it is found to be bug free as per the testing standards that are implemented. And by specification- untraced errors concentrated in the coming versions, which are planned to be developed in near future.
+Finally, we like to conclude that we put all our efforts throughout the development of our project and tired to fulfill most of the
+requi rements of the user.
