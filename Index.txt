@@ -1,13 +1,5 @@
 
 INDEX
-
-Abstract	7
-List of Tables	8
-List of Figures	8
-1.Introduction	9
-2.Overview of Proposed system	10
-2.1Exiting System	10
-2.2Proposed System	11
 3.System Analysis	12
 3.1Front End	12
 3.2Back End	30
@@ -35,4 +27,3 @@ List of Figures	8
 7.2.5Performance Testing	69
 7.2.6White-box Testing	69
 8.Conclusion	70
-9.References	71
